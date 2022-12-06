@@ -20,6 +20,6 @@ from second_app import views
 
 urlpatterns = [
     path(r'', views.index, name = 'index'),
-    path('help/', include('second_app.urls')),
+    path('user/', include('second_app.urls')),
     path('admin/', admin.site.urls),
 ]
